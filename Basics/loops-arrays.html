@@ -1,0 +1,319 @@
+<!--<h3>== operator</h3>
+<script>
+    document.write(`10==10 is: ${10 == 10} <br />`)
+    document.write(`"10"==10 is: ${"10" == 10} <br /><br /><br />`)
+</script>
+
+
+<h3>=== operator</h3>
+<script>
+    document.write(`10===10 is: ${10 === 10} <br />`)
+    document.write(`"10"===10 is: ${"10" === 10} <br /><br /><br />`)
+</script> -->
+
+<!--<script>
+    /* print x values result is Multiple Times from 1 to 10 */
+
+    //step-1-> variable initialization
+    var x = 1
+
+    //step-2 condition
+    if (x == 1) //x == 1-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+    if (x == 2) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 3) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 4) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 5) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 6) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 7) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 8) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+    if (x == 9) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+
+
+    if (x == 10) //x == 2-> condition/expression
+    {
+        document.write(`x value is:${x} <br />`)
+        x++//++x
+    }
+
+</script>-->
+<!--<script>
+    /* print x values result is Multiple Times from 1 to 10 */
+
+    var x = 1
+
+    while (x <= 10)  //1<10....9<10-> true,  10<=10-false
+    {
+        document.write(`x value is:${x} <br />`)
+        x++
+    }
+
+</script>-->
+<!--select>
+    <script>
+        var x = 1
+        document.write(`<option>${x}</option>`)
+    </script>
+</select>-->
+
+<!---<select>
+
+    <option>Days</option>
+
+    <script>
+        var x = 1
+        while (x <= 31) {
+            document.write(`<option>${x}</option>`)
+            x++
+        }
+    </script>
+</select>
+
+
+
+<select>
+
+    <option>Months</option>
+
+    <script>
+        var x = 1
+        while (x <= 12) {
+            document.write(`<option>${x}</option>`)
+            x++
+        }
+    </script>
+</select>
+
+
+
+<select>
+
+    <option>Year</option>
+
+    <script>
+        var x = 2021
+        while (x >= 1905) {
+            document.write(`<option>${x}</option>`)
+            x--
+        }
+    </script>
+</select>-->
+
+
+<!--script>
+
+    var emp = [1, "Lakshmi Praveena Makineni", "mlp@gmail.com",9999999999, "JS"]
+               //0       1                             2           3         4
+
+    //print all values
+     document.write(`${emp} <br /><br />`)
+
+
+    //Index of the array-> choose specific value from array values
+    document.write(`<li>${emp[4]}</li> <br />`) // emp[index]
+
+    var result = ""
+    result += "<ul>"
+    result += `<li>${emp[0]}</li>`
+    result += `<li>${emp[1]}</li>`
+    result += `<li>${emp[2]}</li>`
+    result += `<li>${emp[3]}</li>`
+    result += `<li>${emp[4]}</li>`
+
+    result += "</ul>"
+
+
+    document.write(result)
+
+
+    document.write(`Size of the array is: ${emp.length} <br />`) 
+
+</script>-->
+
+<!--<script>
+
+    //arrays with loops
+
+    var emp = [1, "MLP", "mlp@gmail.com", 9999999999]
+               //0    1       2           3
+
+    var index = 0
+    while (index <= 3) {
+        document.write(`${index} - ${emp[index]}<br />`)
+        index++
+    }
+
+</script>  -->
+
+
+
+
+<!--<script>
+
+    var emp = [101, "MLP", "mlp@gmail.com", 9999999999, "hyd", "FULLSTACK"]  //emp.length -> 6
+    //0       1       2           3           4            5      6
+
+    //arrays with loops
+    var index = 0
+    while (index < emp.length) {
+        document.write(`${index}  - ${emp[index]}<br />`)
+        index++
+    }
+
+</script>-->
+
+<!--
+<select>
+
+    <option>Days</option>
+
+    <script>
+        var x = 1
+        while (x <= 31) {
+            document.write(`<option>${x}</option>`)
+            x++
+        }
+    </script>
+</select>
+
+
+
+<select>
+
+    <option>Months</option>
+
+    <script>
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        //12-> length of the [months.length]
+
+
+
+        var index = 0
+        while (index < months.length) {
+            document.write(`<option>${months[index]}</option>`)
+            index++
+        }
+    </script>
+</select>
+
+
+
+<select>
+
+    <option>Year</option>
+
+    <script>
+        var x = 2021
+        while (x >= 1905) {
+            document.write(`<option>${x}</option>`)
+            x--
+        }
+    </script>
+</select> 
+-->
+
+
+
+
+<!--
+<ul>
+    <script>
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var result = ""
+
+        var index = 0
+        while (index < months.length) {
+            result += `<li>${months[index]}</li>`
+            index++
+        }
+        document.write(result)
+    </script>
+</ul>
+--->
+
+
+<!--<script>
+    var source = 1
+    while (source <= 10) {
+        document.write(`<img src='css/${source}.jpg' width="10%" /> <br />`)
+        source++
+    }
+</script>  -->
+
+
+
+
+<script>
+
+    var imageSources = ["w1.jpg", "w2.jpg", "w3.jpg", "w1.jpg", "w2.jpg", "w3.jpg"]
+
+    var index = 0
+
+    while (index < imageSources.length) 
+    {
+        document.write(`<img src='css/${imageSources[index]}' width="10%" /> <br />`)
+        index++
+    }
+
+</script>
+
+
+
+
+
+
+
+
+

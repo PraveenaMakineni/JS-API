@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkbox</title>
+    <script>
+        function tech(){
+            var jchecked = document.getElementById('js').checked;
+            var rchecked = document.getElementById('reactjs').checked;
+            var ndchecked = document.getElementById('nodejs').checked;
+            var achecked = document.getElementById('angularjs').checked;
+
+            var spanerr = document.getElementById('err');
+            
+            if(jchecked==false && rchecked==false && ndchecked==false && achecked==false){
+                spanerr.innerHTML="Please check your options"
+                spanerr.style.color= "red"
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Form Validations-Checkbox</h3>
+    <h4>Select a Technology:</h4>
+    <form action="../Basics/minnie.jpg" name="checkbox" onsubmit="return tech()">
+       JS<input type="checkbox" id="js" value="JS"/>
+       REACT JS<input type="checkbox" id="reactjs" value="ReactJS"/>
+       NODE JS<input type="checkbox" id="nodejs" value="NodeJS"/>
+       ANGULAR JS<input type="checkbox" id="angularjs" value="AngularJS"/>
+
+       <input type="submit" value="submit"/>
+
+       <span id="err"></span>
+
+    </form>
+    
+</body>
+</html>

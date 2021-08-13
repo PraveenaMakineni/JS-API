@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S M J</title>
+</head>
+<body>
+    
+<script src="../js/scard.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" >
+
+
+        <div class="container p-2">
+            <div class="row">
+                <script>
+                    var result = ""
+                    for (var i of ITS) {
+                        result += 
+                            `<div class="card col-lg-3 col-md-3 bg-transparent"style="height:500px">
+                                    <img src='${i.image}' class="img-card-img-top" /> 
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">${i.title}</h6>
+                                    <p class="card-text">${i.text}</p>
+                                    <a href="application-maintenance.html" 
+                                    class="btn" style="margin-bottom: 18px; margin-top: 0px;">${i.btn}
+                                    </a>
+                                </div>
+                            </div>`
+
+                    }
+                    document.write(result)
+                </script>
+            </div>
+
+        </div>
+</body>
+</html>

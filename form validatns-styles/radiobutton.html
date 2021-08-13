@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>radio button</title>
+    <script>
+        function rb(){
+            var ychecked = document.getElementById('ry').checked;
+            var nchecked = document.getElementById('rn').checked;
+
+            var ychecked1 = document.getElementById('ryerr');
+            // var nchecked1 = document.getElementById('ryerr');
+
+            if(ychecked==false && nchecked==false){
+                ychecked1.innerHTML="Please check any option"
+                ychecked1.style.color= "red"
+                return false
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="Javascript-Form Validations-Radio button"></h1>
+    <form action="rbfinal.html" onsubmit="return rb()"novalidate>
+        <p>Do you want to renew your membership</p>
+        yes<input type="radio" value="yes" id="ry" name="renew" /><br/>
+        no<input type="radio" value="no" id="rn" name="renew" /><br/>
+        <span id="ryerr"></span><br />
+
+        <input type="submit" value="submit"/>
+        
+    
+    </form>
+</body>
+</html>

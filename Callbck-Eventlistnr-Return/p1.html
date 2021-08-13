@@ -1,0 +1,63 @@
+<!--https://www.geeksforgeeks.org/javascript-callbacks/ -->
+
+<!--***-------geeksforgeeks link for callbackfun's-----***-->
+
+<!------------------------------------1st Method------------------------------------ ->
+<script>
+
+    // add() function is called with arguments a, b
+    // and callback, callback will be executed just
+    // after ending of add() function
+    function add(a, b , callback){
+    document.write(`The sum of ${a} and ${b} is ${a+b}.` +"<br>");
+    callback();
+    }
+        
+    // disp() function is called just
+    // after the ending of add() function
+    function disp(){
+    document.write('This must be printed after addition and subtraction');
+    }
+        
+    // Calling add() function
+    add(5,6,disp);	
+        
+</script> 
+
+<script>
+    function add(a,b,cc){
+      document.write(`sum of a and b is ${a+b}  <br />`);
+      cc();
+    }
+    function display(){
+        document.write("Hence the sum value is printed");
+    }
+    add(1,1,display );
+</script>  
+<! ------------------------------------1st Method------------------------------------->
+
+
+
+<!------------------------------------2nd Method------------------------------------->
+<script>
+
+    // add() function is called with arguments a, b
+    // and callback, callback will be executed just
+    // after ending of add() function
+    function add(a, b , callback){
+    document.write(`The sum of ${a} and ${b} is ${a+b} and ${a-b}.` +"<br>");
+    callback();
+    }
+    
+    // add() function is called with arguments given below
+    add(7,6,function disp(){
+    document.write('This must be printed after addition.');
+    });
+        
+</script>
+<!------------------------------------2nd Method------------------------------------->
+
+
+
+
+    

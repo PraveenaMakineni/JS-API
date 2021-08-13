@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>THEMES</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+    <script>
+       var myfun = () => {
+           var pr = document.getElementById('s1').value;
+           var m = document.getElementById('lp');
+           switch(pr){
+               case "blue" : 
+               m.style.color= "blue"
+               m.style.backgroundColor = "grey"
+               break;
+
+               case "red" : 
+               m.style.color= "red"
+               m.style.backgroundColor = "lightblue"
+               break;
+
+               default :
+               m.style.color = "black"
+               m.style.backgroundColor = "white"
+            }
+       }
+    </script>
+</head>
+<body>
+    <h1 id="lp">Welcome!!!!</h1>
+    <select onchange="myfun()" id="s1">
+        <option>Choose any color</option>
+        <option>blue</option>
+        <option>red</option>
+        <option>black</option>
+    </select>
+
+    
+</body>
+</html>

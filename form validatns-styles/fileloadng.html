@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File-uploading</title>
+    <script>
+        function  form_validations() {
+            var fileDOM = document.getElementById('filep');
+            var ferr = document.getElementById('file_err');
+          
+            if (fileDOM.value == ""){
+                //alert("please choose a file")
+                ferr.innerHTML = "choose a file"
+                ferr.style.color = "red"
+                return false;
+            }
+            else if(!fileDOM.value.toLowerCase().match(/(\.jpeg|\.png|\.jpg|\.gif)/)){
+               //alert("pls select an image file")
+                ferr.innerHTML = "select an image file"
+                ferr.style.color = "red"
+                return false;
+            }
+             else if(fileDOM.files.size<1024*1024*2){
+                 //alert("file is accepted")
+                 ferr.innerHTML = "file is accepted"
+                 ferr.style.color = "red"
+                 return false;
+            }
+             else {
+                // alert("pls choose a file less than 2mb")
+                 ferr.innerHTML = "choose a file less than 2mb"
+                 ferr.style.color = "red"
+             }
+
+            // }
+            // else if(!fileDOM.files.size<1024*1024*1){
+            //     ferr.innerHTML = "choose a file less than 1MB"
+            //     ferr.color="red"
+            //     return false;
+            // }
+            // else{
+            //     file.DOM.innerHTML = ""
+            // }
+        }
+    
+    </script>
+</head>
+<body>
+    <h3>Form validations-File uploading</h3>
+    <form action="old.html" onsubmit= " return form_validations() ">
+        <label>Image Upload:</label>
+        <input type="file" id="filep"><br /><br />
+        <span id="file_err"></span>
+        <button type="submit" value="submit">File validation</button>
+
+    </form>
+</body>
+</html>

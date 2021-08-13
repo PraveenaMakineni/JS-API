@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMJ</title>
+</head>
+<body>
+    
+<script src="js/sc.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" >
+
+        <!--<div class="container">-->
+            <div class="row">
+                <script>
+                    var result = ""
+                    for (var i of audio) {
+                        result += 
+                            `<div class="card col-lg-6 mx-auto bg-transparent"style="height:500px">
+                                    <img src='${i.image}' class="img-card-img-top" /> 
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">${i.title}</h6>
+                                    <audio controls>< source src='${i.audioclip}' type="audio/mp3"></audio>
+                                </div>
+                            </div>`
+
+                    }
+                    document.write(result)
+                </script>
+            </div>
+
+</body>
+</html>
+
+

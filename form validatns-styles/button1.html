@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radio button: full validation example with javascript</title>
+        <script>
+            function send() {
+                var genders = document.getElementsByName("season");
+                if (genders[0].checked == true) {
+                    alert("fav season is summer");
+                } else if (genders[1].checked == true) {
+                    alert(" fav season is rainy");
+                }
+                  else if (genders[1].checked == true) {
+                    alert("fav season is winter");
+                } else {
+                    // no checked
+                    var msg = '<span style="color:red;">Select your fav season  !</span><br /><br />';
+                    document.getElementById('msg').innerHTML = msg;
+                    return false;
+                }
+                return true;
+            }
+
+            function reset_msg() {
+                document.getElementById('msg').innerHTML = '';
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <label>Seasons:</label>
+            <br />
+            <input type="radio" name="gender" value="m" onclick="reset_msg();" />Summer
+            <br />
+            <input type="radio" name="gender" value="f" onclick="reset_msg();" />Rainy
+            <br />
+            <input type="radio" name="gender" value="f" onclick="reset_msg();" />Winter
+            <br />
+            <div id="msg"></div>
+            <input type="submit" value="send" onclick="return send();" />
+        </form>
+    </body>
+</html>

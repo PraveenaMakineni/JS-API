@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE-FOR OF</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/vks.js"></script>
+
+</head>
+
+<body>
+
+    <table class="table table-bordered">
+        <tbody>
+            <script>
+                var result = ""
+                for (var emp of empinfo) {
+                    result += "<tr>"
+                    result += `<td>${emp.id}</td>`
+                    result += `<td>${emp.name}</td>`
+                    result += `<td>${emp.email}</td>`
+                    result += `<td>${emp.phone}</td>`
+                    result += "</tr>"
+                }
+                document.write(result)
+            </script>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

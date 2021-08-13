@@ -1,0 +1,18 @@
+<script>
+    //arrow Function without parameters
+    var res1 = () => document.write(`CALLBACK FUNCTION <br />`)
+    res1()
+
+    //arrow Function with one parameter
+    var res2 = name => document.write(`i am ${name} <br />`)
+    res2("js");
+
+    //arrow Function with parameters
+    var res3 = function (name, address) {
+        document.write(`i am ${name} `)
+        document.write(`from ${address} <br />`)
+    }
+
+    res3("js", "Guntur")
+
+</script>

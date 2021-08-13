@@ -1,0 +1,36 @@
+<script>
+
+    //PARENT/BASE/SUPER/MAIN CLASS
+    class user {
+
+        constructor() {
+            document.write("USER CLASS - Constructor <br />")
+        }
+
+        user_myfun() {
+            document.write("USER CLASS - Myfun <br />")
+        }
+    }
+    
+
+
+    //CHILD/DERIVED/SUB/NEXT CLASS
+    class admin extends user {
+
+        constructor() {
+            super()//calling PARENT_CLASS_CONSTRUCTOR from child Class....
+            document.write("ADMIN CLASS - Constructor <br />")
+        }
+
+        Admin_myfun() {
+            document.write("ADMIN CLASS - Myfun <br />")
+            super.user_myfun()//PARENT CLASS METHOD CALLING FROM CHILD CLASS BY SUPER 
+        }
+
+    }
+
+
+    var a = new admin()
+    a.Admin_myfun()
+
+</script>

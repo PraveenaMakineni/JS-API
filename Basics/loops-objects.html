@@ -1,0 +1,238 @@
+<!--PAGINATION-->
+ <!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS-OBJEC</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <ul class="pagination">
+            <script>
+
+                var result = ""
+
+                for (var i = 1; i <= 10; i++) {
+                    result += `<li class="page-item">
+                                <a href="#" class="page-link">${i}</a>
+                               </li>`
+                }
+
+                document.write(result)
+
+            </script>
+        </ul>
+
+    </div>
+
+
+
+</body>
+
+</html>
+<! --PAGINATION-->
+
+<!----ARRAYS WITH SHORTCUTS-->
+<!--
+<select>
+
+    <option>Days</option>
+
+    <script>
+
+        for (var x = 1; x <= 31; x++) {
+            document.write(`<option>${x}</option>`)
+        }
+    </script>
+</select>
+
+
+
+<select>
+
+    <option>Months</option>
+
+    <script>
+
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        //12-> length of the [months.length]
+        for (var index = 0; index < months.length; index++) {
+            document.write(`<option>${months[index].slice(0, 3)}</option>`)
+        }
+    </script>
+</select>
+
+
+
+<select>
+
+    <option>Year</option>
+
+    <script>
+
+        for (var x = 2021; x >= 1905; x--) {
+            document.write(`<option>${x}</option>`)
+        }
+    </script>
+</select> -->
+<!----ARRAYS WITH SHORTCUTS-->
+
+
+<!---OBJECTS DECLN AND ACCESSING--->
+<!--<script>
+    // using arrays  
+    // var emp1=[1, "js", "js@gmail.com", 999999999999 ]     //   
+    
+    // using objects
+    var emp =
+    {
+        id: 1,
+        name: "js",
+        email: "js@gmail.com",
+        phone:  999999999999
+    }
+
+    //access object data //objectname.length
+    document.write(`
+                    id is:${emp.id} <br />
+                    Name is:${emp.name} <br />
+                    Email is:${emp.email} <br />
+                    Phone is:${emp.phone} <br />
+        `)
+</script>-->
+<!---OBJECTS DECLN AND ACCESSING--->
+
+<!--OBJECTS WITH FOR-IN LOOP-->
+<!---<script>
+
+    var emp =
+    {
+        id: 1,
+        name: "js",
+        email: "js@gmail.com",
+        phone: 9999999999
+    }
+
+
+    for (var i in emp) {
+        document.write(`${i} - ${emp[i]}<br />`)
+    }
+
+</script>-->
+<!--OBJECTS WITH FOR-IN LOOP-->
+
+<!--OBJECTS WITH FOR-IN LOOP in LIST FORMAT-->
+<!--
+<ul>
+<script>
+
+    var emp =
+    {
+        id: 1,
+        name: "jsnan",
+        email: "js@gmail.com",
+        phone: 9999999999
+    }
+
+    var res=""
+    for (var i in emp) {
+        //res+=(`${emp[i]}<br />`)
+        res+= `<li>${emp[i]}</li>`
+              
+    }
+    document.write(res)
+   // document.write('keys is: ${i}',`value is :${emp[i]}`)
+
+</script>
+</ul>  -->
+<!--OBJECTS WITH FOR-IN LOOP in LIST FORMAT-->
+
+
+<!--OBJECTS WITH FOR-IN LOOP ACCESSING SINGLE INDEX VALUE-- >
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/empdata.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <script>
+            var result = ""
+            for (var i in einfo[5]) {
+                result += `<li>${einfo[5][i]}</li>`
+            }
+
+            document.write(result)
+
+        </script>
+    </ul>
+
+</body>
+
+</html>
+<! --OBJECTS WITH FOR-IN LOOP ACCESSING SINGLE INDEX VALUE-->
+
+
+<!--OBJECTS WITH FOR-IN LOOP ACCESSING ALL INDEX VALUES USING NESTED FOR LOOP-- >
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/vks.js"></script>
+
+</head>
+
+<body>
+    <ul>
+        <script>
+            var result = ""
+            for (var i  in  einfo){
+                result+=`<ul>`
+            
+                for (var names in einfo[i]) {
+                       result += `<li>${einfo[i][names]}</li>`
+                }
+                result+=`</ul>`
+            }
+
+            document.write(result)
+
+        </script>
+    </ul>
+
+</body>
+</html> 
+<! --OBJECTS WITH FOR-IN LOOP ACCESSING ALL INDEX VALUES USING NESTED FOR LOOP---->
+
+<!-----nxt 3 pgms written separately----->              
+
+
+
+
+
+
+
+
+

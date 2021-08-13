@@ -1,0 +1,18 @@
+<script>
+    function myfun(msg, tno, maxRange) {
+        var res = "";
+        for (var i = 1; i <= maxRange; i++) {
+            res += `${tno} X ${i}=${tno * i} <br />`
+        }
+        document.write(`
+        <h3>${msg}</h3>
+        ${res}<br />`)
+    }
+
+    //function calls
+    myfun("2nd Table", 2, 5)
+    myfun("3rd Table", 3, 10)
+    myfun("4th Table", 4, 15)
+    myfun("5Th Table", 5, 20)
+
+</script>

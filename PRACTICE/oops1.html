@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+
+   //...class_declaration_and_Body...
+    class userData {
+
+        //class properties
+        uname = "kumar"
+        email = "kumar@gmail.com"
+
+
+        //class Methods 
+        name1() {
+            var phone = 765432456;//local
+            this.email
+            this.name2()
+        }
+
+        name2 = function () {
+            var phone = 765432456;//local
+            this.name3()
+        }
+
+        name3 = () => {
+            var phone = 765432456;//local
+        }
+
+    }
+
+
+    //object for className-> Instance of the class
+    //var user = new userdata
+    var user = new userData()
+
+    //access class methods By object 
+    user.name1()
+
+
+</script>
+</body>
+</html>

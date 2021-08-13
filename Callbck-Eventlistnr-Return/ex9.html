@@ -1,0 +1,31 @@
+<script>
+    function myfun() {
+        document.write(`Statement-1 <br />`)
+
+        return false;//stop the execution 
+        document.write(`Statement-2 <br />`)
+        document.write(`Statement-3 <br />`)
+    }
+
+
+    myfun()
+</script>
+
+
+<h3>return Controls HTML Attributes</h3>
+<a onclick="return window.confirm(`Goto faceBook?`)" href="http://www.fb.com">CLICK</a>
+
+
+<h3>return Controls user Behaviours</h3>
+
+<label for="">Name</label>
+<input type="text" oncut="return false" onpaste="return false" oncopy="return false" />
+
+<br><br>
+
+<label for="">Email</label>
+<input type="email" oncut="return false" onpaste="return false" oncopy="return false" />
+
+
+
+

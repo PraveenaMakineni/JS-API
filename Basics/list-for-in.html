@@ -1,0 +1,37 @@
+<!--OBJECTS WITH FOR-IN LOOP ACCESSING ALL INDEX VALUES USING NESTED FOR LOOP cp---->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST-FOR IN</title>
+
+    <script src="js/vks.js"></script>
+
+</head>
+
+<body>
+    <script>
+        var result = " "
+        for (var e in empinfo) 
+        {
+            result += `<ul>`
+
+            for (var e in empinfo[index]) {
+                result += `<li>${empinfo[index][e]}</li>`
+            }
+
+            result += `</ul>`
+        }
+
+        document.write(result)
+    </script>
+
+    
+</body>
+
+</html>
+<!--OBJECTS WITH FOR-IN LOOP ACCESSING ALL INDEX VALUES USING NESTED FOR LOOP cp-->
